@@ -24,7 +24,9 @@ class DiceUITableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "whateverWeWantItToBe", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "whateverWeWantItToBe", for: indexPath) as! DiceTableViewCell
+        let dice = diceList[indexPath.item]
+        cell.dice = dice
         return cell;
     }
 

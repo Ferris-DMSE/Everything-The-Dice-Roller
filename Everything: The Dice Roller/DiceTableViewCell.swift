@@ -11,4 +11,8 @@ import UIKit
 
 class DiceTableViewCell: UITableViewCell {
     
+    public var dice: Dice?;
+    
+    @IBAction func Selected(_ sender: UIButton) {
+    }
 }

@@ -37,6 +37,9 @@
                                                             <frame key="frameInset" minY="5" width="367" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" title="Button"/>
+                                                            <connections>
+                                                                <action selector="Selected:" destination="fuL-Qr-iOB" eventType="touchUpInside" id="w2l-Lv-Apd"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </tableViewCellContentView>
