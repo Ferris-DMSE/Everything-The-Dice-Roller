@@ -14,6 +14,9 @@
 		17A474711DAD740900A395AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A4746F1DAD740900A395AD /* LaunchScreen.storyboard */; };
 		17A4747C1DAD740900A395AD /* Everything__The_Dice_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4747B1DAD740900A395AD /* Everything__The_Dice_RollerTests.swift */; };
 		17A474871DAD740900A395AD /* Everything__The_Dice_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A474861DAD740900A395AD /* Everything__The_Dice_RollerUITests.swift */; };
+		17E507A71DB016F800C531DB /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507A61DB016F800C531DB /* Dice.swift */; };
+		17E507A91DB0200900C531DB /* DiceUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507A81DB0200900C531DB /* DiceUITableViewController.swift */; };
+		17E507AB1DB022AC00C531DB /* DiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		17A474821DAD740900A395AD /* Everything: The Dice RollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Everything: The Dice RollerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A474861DAD740900A395AD /* Everything__The_Dice_RollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Everything__The_Dice_RollerUITests.swift; sourceTree = "<group>"; };
 		17A474881DAD740900A395AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17E507A61DB016F800C531DB /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		17E507A81DB0200900C531DB /* DiceUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceUITableViewController.swift; sourceTree = "<group>"; };
+		17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				17A4746D1DAD740900A395AD /* Assets.xcassets */,
 				17A4746F1DAD740900A395AD /* LaunchScreen.storyboard */,
 				17A474721DAD740900A395AD /* Info.plist */,
+				17E507A61DB016F800C531DB /* Dice.swift */,
+				17E507A81DB0200900C531DB /* DiceUITableViewController.swift */,
+				17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */,
 			);
 			path = "Everything: The Dice Roller";
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E507A91DB0200900C531DB /* DiceUITableViewController.swift in Sources */,
 				17A474691DAD740900A395AD /* ViewController.swift in Sources */,
+				17E507A71DB016F800C531DB /* Dice.swift in Sources */,
 				17A474671DAD740900A395AD /* AppDelegate.swift in Sources */,
+				17E507AB1DB022AC00C531DB /* DiceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				17A4748D1DAD740900A395AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A4748E1DAD740900A395AD /* Build configuration list for PBXNativeTarget "Everything: The Dice RollerTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				17A474901DAD740900A395AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A474911DAD740900A395AD /* Build configuration list for PBXNativeTarget "Everything: The Dice RollerUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				17A474931DAD740900A395AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
