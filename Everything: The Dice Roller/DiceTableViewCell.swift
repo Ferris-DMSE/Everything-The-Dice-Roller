@@ -11,8 +11,22 @@ import UIKit
 
 class DiceTableViewCell: UITableViewCell {
     
-    public var dice: Dice?;
+    private var dice: Dice?;
     
-    @IBAction func Selected(_ sender: UIButton) {
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var result: UILabel!
+    
+    public func setDice(dice: Dice) {
+        self.dice = dice;
+        self.button.setTitle(String(dice.size), for: .normal)
+        setResult(text: String(dice.result))
+    }
+    
+    @IBAction func selected(_ sender: AnyObject) {
+        
+    }
+    
+    public func setResult(text: String) {
+        self.result.text = text
     }
 }

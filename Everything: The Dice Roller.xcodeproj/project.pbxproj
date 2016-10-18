@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		17A474671DAD740900A395AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A474661DAD740900A395AD /* AppDelegate.swift */; };
-		17A474691DAD740900A395AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A474681DAD740900A395AD /* ViewController.swift */; };
 		17A4746C1DAD740900A395AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A4746A1DAD740900A395AD /* Main.storyboard */; };
 		17A4746E1DAD740900A395AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A4746D1DAD740900A395AD /* Assets.xcassets */; };
 		17A474711DAD740900A395AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A4746F1DAD740900A395AD /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		17A474631DAD740900A395AD /* Everything: The Dice Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everything: The Dice Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A474661DAD740900A395AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17A474681DAD740900A395AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17A4746B1DAD740900A395AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A4746D1DAD740900A395AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A474701DAD740900A395AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				17A474661DAD740900A395AD /* AppDelegate.swift */,
-				17A474681DAD740900A395AD /* ViewController.swift */,
 				17A4746A1DAD740900A395AD /* Main.storyboard */,
 				17A4746D1DAD740900A395AD /* Assets.xcassets */,
 				17A4746F1DAD740900A395AD /* LaunchScreen.storyboard */,
@@ -269,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E507A91DB0200900C531DB /* DiceUITableViewController.swift in Sources */,
-				17A474691DAD740900A395AD /* ViewController.swift in Sources */,
 				17E507A71DB016F800C531DB /* Dice.swift in Sources */,
 				17A474671DAD740900A395AD /* AppDelegate.swift in Sources */,
 				17E507AB1DB022AC00C531DB /* DiceTableViewCell.swift in Sources */,

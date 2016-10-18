@@ -11,18 +11,14 @@ import Foundation
 
 class Dice {
     public var size:UInt32 = 0;
+    public var result: UInt32 = 0;
     
-    init() {
-        
+    init(size: UInt32) {
+        self.size = size;
     }
     
-    
-    func Roll() -> Int{
-        return Int(arc4random_uniform(size) + 1);
+    func Roll() {
+        result = UInt32(arc4random_uniform(size) + 1);
     }
-    
-    
-    
-    
     
 }
