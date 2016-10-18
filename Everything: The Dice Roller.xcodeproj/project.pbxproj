@@ -16,6 +16,7 @@
 		17E507A71DB016F800C531DB /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507A61DB016F800C531DB /* Dice.swift */; };
 		17E507A91DB0200900C531DB /* DiceUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507A81DB0200900C531DB /* DiceUITableViewController.swift */; };
 		17E507AB1DB022AC00C531DB /* DiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */; };
+		17F558251DB6BBD900FA222D /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F558241DB6BBD900FA222D /* ArrayExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		17E507A61DB016F800C531DB /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
 		17E507A81DB0200900C531DB /* DiceUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceUITableViewController.swift; sourceTree = "<group>"; };
 		17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceTableViewCell.swift; sourceTree = "<group>"; };
+		17F558241DB6BBD900FA222D /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				17A474721DAD740900A395AD /* Info.plist */,
 				17E507A61DB016F800C531DB /* Dice.swift */,
 				17E507A81DB0200900C531DB /* DiceUITableViewController.swift */,
+				17F558241DB6BBD900FA222D /* ArrayExtensions.swift */,
 				17E507AA1DB022AC00C531DB /* DiceTableViewCell.swift */,
 			);
 			path = "Everything: The Dice Roller";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E507A91DB0200900C531DB /* DiceUITableViewController.swift in Sources */,
+				17F558251DB6BBD900FA222D /* ArrayExtensions.swift in Sources */,
 				17E507A71DB016F800C531DB /* Dice.swift in Sources */,
 				17A474671DAD740900A395AD /* AppDelegate.swift in Sources */,
 				17E507AB1DB022AC00C531DB /* DiceTableViewCell.swift in Sources */,

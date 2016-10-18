@@ -22,6 +22,7 @@ class DiceUITableViewController: UIViewController, UITableViewDelegate, UITableV
         table.reloadData()
     }
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var newDie: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.table.delegate = self
@@ -41,11 +42,27 @@ class DiceUITableViewController: UIViewController, UITableViewDelegate, UITableV
         let dice = diceList[indexPath.item]
         //cell.dice = dice
         cell.setDice(dice: dice)
+        cell.setController(controller: self)
         return cell;
+    }
+    @IBAction func addDie(_ sender: AnyObject) {
+        let size = Int(self.newDie.text!)
+        let die = Dice(size: UInt32(size!))
+        diceList.append(die)
+        table.reloadData()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // cell selected code here
+    }
+    
+    public func deleteDice(dice: Dice) {
+        let arr : Array = diceList
+        
+        if let index = arr.index(of: dice) {
+            diceList.remove(at: index)
+        }
+        self.table.reloadData()
     }
 
 }

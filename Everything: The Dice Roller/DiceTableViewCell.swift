@@ -12,10 +12,12 @@ import UIKit
 class DiceTableViewCell: UITableViewCell {
     
     private var dice: Dice?;
-    
+    private var controller: DiceUITableViewController?;
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var result: UILabel!
-    
+    @IBAction func deleteDie(_ sender: AnyObject) {
+        controller!.deleteDice(dice: dice!);
+    }
     public func setDice(dice: Dice) {
         self.dice = dice;
         self.button.setTitle(String(dice.size), for: .normal)
@@ -28,5 +30,9 @@ class DiceTableViewCell: UITableViewCell {
     
     public func setResult(text: String) {
         self.result.text = text
+    }
+    
+    public func setController(controller: DiceUITableViewController) {
+        self.controller = controller
     }
 }
