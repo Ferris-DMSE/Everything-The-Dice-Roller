@@ -29,6 +29,9 @@ class DiceUITableViewController: UIViewController, UITableViewDelegate, UITableV
         self.table.dataSource = self
     }
     
+    @IBAction func addDieKeyboard(_ sender: AnyObject) {
+        _addDie()
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
@@ -46,10 +49,17 @@ class DiceUITableViewController: UIViewController, UITableViewDelegate, UITableV
         return cell;
     }
     @IBAction func addDie(_ sender: AnyObject) {
-        let size = Int(self.newDie.text!)
-        let die = Dice(size: UInt32(size!))
-        diceList.append(die)
-        table.reloadData()
+        _addDie()
+    }
+    
+    func _addDie() {
+        if let size = UInt32(self.newDie.text!) {
+            let die = Dice(size: size)
+            newDie.text = ""
+            newDie.endEditing(true)
+            diceList.append(die)
+            table.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -8,8 +8,11 @@
 
 import Foundation
 
+func == (lhs:Dice, rhs:Dice) -> Bool {
+    return lhs === rhs;
+}
 
-class Dice {
+class Dice: Equatable {
     public var size:UInt32 = 0;
     public var result: UInt32 = 0;
     
