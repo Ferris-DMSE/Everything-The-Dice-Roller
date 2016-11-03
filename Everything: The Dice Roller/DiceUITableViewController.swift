@@ -43,6 +43,7 @@ class DiceUITableViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "DiceCell", for: indexPath) as! DiceTableViewCell
         let dice = diceList[indexPath.item]
+        
         //cell.dice = dice
         cell.setDice(dice: dice)
         cell.setController(controller: self)
